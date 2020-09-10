@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  # Start this with 'docker-compose run neverexit'.
+  # Stop it with 'docker-compose down'.
+  neverexit:
+    image: ruby:2.7.1
+    volumes:
+      - ./neverexit.rb:/neverexit.rb
+    command: ruby neverexit.rb
