@@ -8,7 +8,8 @@ Thread.new do
         should_raise = false
         puts "... tick (thread state = #{Thread.current.status})"
       ensure
-        raise "boom" if should_raise
+        ohhnoooo if should_raise
+        # or: raise "boom" if should_raise
       end
     rescue => e
       puts "ignoring #{e.message} (#{e.class})"
